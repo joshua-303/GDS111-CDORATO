@@ -34,3 +34,36 @@ c.lineTo(50,70);
 c.stroke();
 c.fill();
 
+c.beginPath();
+c.arc(100, 75, 5, 0, 2 * Math.PI);
+c.stroke();
+c.fillStyle = "red";
+c.fill();
+
+c.beginPath();
+c.arc(80, 60, 5, 0, 2 * Math.PI);
+c.stroke();
+c.fillStyle = "red";
+c.fill();
+
+c.beginPath();
+c.arc(60, 90, 5, 0, 2 * Math.PI);
+c.stroke();
+c.fillStyle = "red";
+c.fill();
+
+c.beginPath();
+c.moveTo(70, 12);
+c.lineTo(75, 12);
+c.lineTo(80, 5);
+c.lineTo(85, 12);
+c.lineTo(90, 12);
+c.lineTo(85, 17);
+c.lineTo(88, 23);
+c.lineTo(80, 20);
+c.lineTo(72, 23);
+c.lineTo(75, 17);
+c.lineTo(70, 12);
+c.stroke();
+c.fillStyle = "yellow";
+c.fill();
