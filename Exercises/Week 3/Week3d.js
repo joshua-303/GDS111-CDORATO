@@ -1,4 +1,5 @@
 console.log("Week3d running");
+/*ADDING THIS COMMENT TO FIX COMMIT MESSAGE*/
 
 console.log("<<< MAIN MENU >>>");
 console.log("                 ");
