@@ -6,7 +6,7 @@ console.log("                 ");
 console.log("<1> Instructions ");
 console.log("<2> Play Game    ");
 console.log("<3> Quit         ");
-console.log("                 ")
+console.log("                 ");
 console.log("Select a number: ");
 
 var a = Number(prompt("Enter any value: "));
