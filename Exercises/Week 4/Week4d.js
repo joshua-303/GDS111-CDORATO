@@ -17,6 +17,6 @@ console.log(typeof fName);
 const player = ["Jeff", "Joshua", "Omar", "John"];
 console.log("Their name is " + player[0]);
 
-for (let name = 0; name < 4; name++) {
-    console.log("Their name is " + player[name]);
+for (const [index, name] of player.entries()) {
+    console.log(index, name);
 }
