@@ -1,5 +1,6 @@
-var rand = [];
-for(let num = 0; num < 6; num++) {
-    rand.push(Math.floor(1 + (50-1) * Math.random()));
-    console.log(rand[num]);
+let num = [];
+function randNum(a, b) {
+ return  Math.floor(a + (b-a) * Math.random());
 }
+num.push(randNum(1, 10));
+console.log("Your number is " + num[num.length-1]);

@@ -3,7 +3,7 @@ func2(7);
 let twiceNum = doubleIt(5);
 let msg = message();
 console.log(msg);
-console.log("Function doubleIt() returns = " + twice);
+console.log("Function doubleIt() returns = " + twiceNum);
 
 function myFunction() {
     console.log("I'm inside myFunction()");
