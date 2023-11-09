@@ -1,6 +1,6 @@
 function menu() {
-    let selection = [changeActions(), buttonLayout(), keyBindings(), onEventScripts(), mainMenuBar(),
-    miscOptions(), unlockDragging(), showButtonIDs(), showActionIDs(), copy(), paste()];
+    const selection = [changeActions, buttonLayout, keyBindings, onEventScripts, mainMenuBar,
+    miscOptions, unlockDragging, showButtonIDs, showActionIDs, copy, paste];
     let run = 0;
     console.log("Main Menu Bar\n\n1. Change Actions\n2. Button Layout\n3. Keybinds\n4. OnEvent Scripts",
     "\n5. Main Menu Bar\n6. Misc Options\n7. Unlock Dragging\n8. Show Button IDs\n9. Show Actions IDs",
@@ -18,54 +18,60 @@ function menu() {
                 console.log("The end!")
                 break;
             } else {
-                console.log(selection[userInput-1]);
+                selection[userInput-1]();
             }
         }
     }
 }
 
 function changeActions() {
-    return "This is the change action function.";
+    console.log("This is the change action function.");
 }
 
 function buttonLayout() {
-    return "This is the button layout function.";
+    console.log("This is the button layout function.");
 }
 
 function keyBindings() {
-    return "This is the key bindings function."
+    console.log("This is the key bindings function.");
 }
 
 function onEventScripts() {
-    return "This is the on event scripts function."
+    console.log("This is the on event scripts function.");
 }
 
 function mainMenuBar() {
-    return "This is the main menu bar function."
+    console.log("This is the main menu bar function.");
 }
 
 function miscOptions() {
-    return "This is the misc options function."
+    console.log("This is the misc options function.");
 }
 
 function unlockDragging() {
-    return "This is the unlock dragging function."
+    console.log("This is the unlock dragging function.");
 }
 
 function showButtonIDs() {
-    return "This is the show button IDs function."
+    console.log("This is the show button IDs function.");
 }
 
 function showActionIDs() {
-    return "This is the show action IDs function."
+    console.log("This is the show action IDs function.");
 }
 
 function copy() {
-    return "This is the copy function."
+    console.log("This is the copy function.");
 }
 
 function paste() {
-    return "This is the paste function."
+    console.log("This is the paste function.");
 }
 
 menu();
+
+window.addEventListener('keydown', function surp(e) {
+    if (e.keyCode == "13") {
+        menu();
+    }
+}, false);
