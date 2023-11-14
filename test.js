@@ -1,7 +1,7 @@
 console.log("Testing");
 
 let b = document.querySelector('button');
-let newAcc = document.querySelector('accCreation');
+let newAcc = document.getElementById('accCreation').name;
 const username = [];
 const pass = [];
 
@@ -16,12 +16,16 @@ b.addEventListener('click', function() {
 });
 
 newAcc.addEventListener(click, function() {
-        let newUser = prompt("Enter a username.");
-        let newPass = prompt("Enter a password.");
-        if (username.every(newUser)) {
+        let i = 0;
+        while(i == 0) {
+                let newUser = prompt("Enter a username.");
+                if (username.every(newUser)) {
                 alert("This username is already taken.");
-        } else {
-                username.push(newUser);
-                pass.push(newPass);
+                } else {
+                        let newPass = prompt("Enter a password.");
+                        pass.push(newPass);
+                        username.push(newUser);
+                        break;
+                }
         }
-})
+});
