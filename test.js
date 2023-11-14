@@ -1,6 +1,9 @@
 console.log("Testing");
 
-var b = document.querySelector('button');
+let b = document.querySelector('button');
+let newAcc = document.querySelector('accCreation');
+const username = [];
+const pass = [];
 
 b.addEventListener('click', function() {
        /* var vergil = prompt("PUT A NUMBER");
@@ -11,3 +14,14 @@ b.addEventListener('click', function() {
                 window.location.href = 'https://www.devilmaycry.com/en/';
         }
 });
+
+newAcc.addEventListener(click, function() {
+        let newUser = prompt("Enter a username.");
+        let newPass = prompt("Enter a password.");
+        if (username.every(newUser)) {
+                alert("This username is already taken.");
+        } else {
+                username.push(newUser);
+                pass.push(newPass);
+        }
+})
