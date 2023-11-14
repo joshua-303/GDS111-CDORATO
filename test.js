@@ -1,6 +1,6 @@
 console.log("Testing");
 
-let b = document.querySelector('button');
+let b = document.getElementById('vButton');
 let newAcc = document.getElementById('accCreation');
 let login = document.getElementById('userLogin');
 let userEntry = document.getElementById('username');
@@ -46,7 +46,9 @@ login.addEventListener('click', function() {
                         validUser = true;
                 }
                 if (validUser == true) {
-                        
+                        console.log("Successful login!");
+                } else {
+                        console.log("Invalid login.");
                 }
         }
 })
