@@ -1,12 +1,16 @@
 console.log("Testing");
 
+let form = document.getElementById('login');
 let b = document.getElementById('vButton');
 let newAcc = document.getElementById('accCreation');
 let login = document.getElementById('userLogin');
-let userEntry = document.getElementById('username');
-let passEntry = document.getElementById('password');
 const username = [];
 const pass = [];
+function submitForm(form) {
+        form.preventDefault();
+}
+
+form.addEventListener('submit', submitForm);
 
 b.addEventListener('click', function() {
        /* var vergil = prompt("PUT A NUMBER");
@@ -39,16 +43,19 @@ newAcc.addEventListener('click', function() {
 });
 
 login.addEventListener('click', function() {
-        for (i in username) {
-                let validUser = false;
+        let userEntry = document.getElementById('username').value;
+        let passEntry = document.getElementById('password').value;
+        let validUser = false;
+        for (let i = 0; i < username.length; i++) {
                 if (userEntry == username[i] &&
-                passEntry == pass[i]) {
+                    passEntry == pass[i]) {
                         validUser = true;
+                    }
                 }
                 if (validUser == true) {
                         console.log("Successful login!");
                 } else {
                         console.log("Invalid login.");
+                        console.log(userEntry + "\n" + passEntry);
                 }
-        }
-})
+});
