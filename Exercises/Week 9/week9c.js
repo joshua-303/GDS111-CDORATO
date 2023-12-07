@@ -117,7 +117,7 @@ function someoneWon(symbol) {
 }
 
 function getRandomInt(min, max) {
-    return Math.floor(min+(max+min)*Math.random());
+    return Math.floor(min+(max-min)*Math.random());
 }
 
 let choice = 0;
